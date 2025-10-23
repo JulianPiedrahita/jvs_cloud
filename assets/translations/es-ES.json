@@ -1,0 +1,16 @@
+{
+  "app_name": "JVS Cloud",
+  "welcome_message": "Bienvenido a JVS Cloud",
+  "login": "Iniciar Sesión",
+  "email": "Correo Electrónico",
+  "password": "Contraseña",
+  "forgot_password": "¿Olvidaste tu contraseña?",
+  "register": "Registrarse",
+  "dashboard": "Panel de Control",
+  "profile": "Perfil",
+  "iac_resources": "Recursos de IaC",
+  "cloud_providers": "Proveedores de Nube",
+  "loading": "Cargando...",
+  "error": "Error",
+  "success": "Éxito"
+}
