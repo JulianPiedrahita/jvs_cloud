@@ -361,7 +361,7 @@ class DashboardPage extends StatelessWidget {
                     vertical: isMobile ? 40 : 80,
                     horizontal: isMobile ? 20 : 40,
                   ),
-                  color: Colors.grey[50],
+                  color: kIsWeb ? Colors.transparent : Colors.grey[50], // Transparente en web, gris en otras plataformas
                   child: Column(
                     children: [
                       Text(
