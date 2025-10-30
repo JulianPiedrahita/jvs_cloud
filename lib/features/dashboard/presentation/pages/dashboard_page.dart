@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:go_router/go_router.dart';
 import '../../../../core/constants/app_constants.dart';
 
@@ -9,8 +10,16 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
+      body: Container(
+        decoration: kIsWeb ? const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/fondo.jpg'),
+            fit: BoxFit.cover,
+            opacity: 0.3, // Hacer la imagen más transparente para que el contenido sea legible
+          ),
+        ) : null,
+        child: CustomScrollView(
+          slivers: [
           // Header Section - FULLY RESPONSIVE FOR ALL SCREENS
           SliverToBoxAdapter(
             child: LayoutBuilder(
@@ -525,7 +534,8 @@ class DashboardPage extends StatelessWidget {
               },
             ),
           ),
-        ],
+          ],
+        ),
       ),
     );
   }
