@@ -119,15 +119,6 @@ class AppTheme {
         ),
       ),
       
-      // Card Theme
-      cardTheme: CardThemeData(
-        elevation: 2,
-        color: AppColors.cardLight,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(12)),
-        ),
-      ),
-      
       // Elevated Button Theme
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -207,15 +198,6 @@ class AppTheme {
           fontSize: 20,
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimaryDark,
-        ),
-      ),
-      
-      // Card Theme
-      cardTheme: CardThemeData(
-        elevation: 2,
-        color: AppColors.cardDark,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
       ),
       
