@@ -1,0 +1,37 @@
+# Flutter related
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Git
+.git/
+.gitignore
+
+# VS Code
+.vscode/
+
+# Documentation
+README.md
+CHANGELOG.md
+
+# Testing
+test/
+integration_test/
+
+# Platform specific
+android/
+ios/
+linux/
+macos/
+windows/
+
+# Build files (except web)
+build/
+!build/web/
+
+# Environment files
+.env*
+
+# GitHub
+.github/

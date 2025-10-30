@@ -84,3 +84,6 @@ coverage/
 # kluster related
 .github/instructions/kluster-code-verify.instructions.md
 .kluster
+
+# Vercel
+.vercel
