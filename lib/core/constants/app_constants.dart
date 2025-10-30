@@ -133,35 +133,6 @@ class AppRoutes {
   static const String adminAnalytics = '/admin/analytics';
 }
 
-/// Asset paths
-class AppAssets {
-  // Images
-  static const String logo = 'assets/images/logo.png';
-  static const String logoWhite = 'assets/images/logo_white.png';
-  static const String placeholderImage = 'assets/images/placeholder.png';
-  
-  // Icons
-  static const String awsIcon = 'assets/icons/aws.svg';
-  static const String gcpIcon = 'assets/icons/gcp.svg';
-  static const String azureIcon = 'assets/icons/azure.svg';
-  static const String terraformIcon = 'assets/icons/terraform.svg';
-  static const String cloudformationIcon = 'assets/icons/cloudformation.svg';
-  static const String bicepIcon = 'assets/icons/bicep.svg';
-  static const String pulumiIcon = 'assets/icons/pulumi.svg';
-  
-  // Animations
-  static const String loadingAnimation = 'assets/animations/loading.json';
-  static const String successAnimation = 'assets/animations/success.json';
-  static const String errorAnimation = 'assets/animations/error.json';
-  static const String emptyStateAnimation = 'assets/animations/empty_state.json';
-  
-  // Code Templates
-  static const String terraformTemplates = 'assets/code_templates/terraform/';
-  static const String cloudformationTemplates = 'assets/code_templates/cloudformation/';
-  static const String bicepTemplates = 'assets/code_templates/bicep/';
-  static const String pulumiTemplates = 'assets/code_templates/pulumi/';
-}
-
 /// Error messages and codes
 class AppErrors {
   // Network Errors
