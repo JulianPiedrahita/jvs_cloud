@@ -88,22 +88,43 @@ class DashboardPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        // Login button
-                        ElevatedButton.icon(
-                          onPressed: () => context.go(AppRoutes.login),
-                          icon: Icon(Icons.login, size: isExtraSmall ? 14 : isMobile ? 16 : 18),
-                          label: Text(
-                            isExtraSmall ? '' : 'Login', // Hide text on very small screens
-                            style: TextStyle(fontSize: isMobile ? 12 : 14),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: const Color(0xFF2196F3),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: isExtraSmall ? 8 : isMobile ? 12 : 16,
-                              vertical: isExtraSmall ? 4 : isMobile ? 6 : 8,
+                        // Login and Contact buttons
+                        Row(
+                          children: [
+                            ElevatedButton.icon(
+                              onPressed: () => context.go('/contact'),
+                              icon: Icon(Icons.contact_mail, size: isExtraSmall ? 14 : isMobile ? 16 : 18),
+                              label: Text(
+                                isExtraSmall ? '' : 'Contáctanos', // Hide text on very small screens
+                                style: TextStyle(fontSize: isMobile ? 12 : 14),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white.withOpacity(0.9),
+                                foregroundColor: const Color(0xFF2196F3),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: isExtraSmall ? 8 : isMobile ? 12 : 16,
+                                  vertical: isExtraSmall ? 4 : isMobile ? 6 : 8,
+                                ),
+                              ),
                             ),
-                          ),
+                            const SizedBox(width: 8),
+                            ElevatedButton.icon(
+                              onPressed: () => context.go(AppRoutes.login),
+                              icon: Icon(Icons.login, size: isExtraSmall ? 14 : isMobile ? 16 : 18),
+                              label: Text(
+                                isExtraSmall ? '' : 'Login', // Hide text on very small screens
+                                style: TextStyle(fontSize: isMobile ? 12 : 14),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                foregroundColor: const Color(0xFF2196F3),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: isExtraSmall ? 8 : isMobile ? 12 : 16,
+                                  vertical: isExtraSmall ? 4 : isMobile ? 6 : 8,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),

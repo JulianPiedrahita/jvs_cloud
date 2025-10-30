@@ -5,6 +5,7 @@ import '../constants/app_constants.dart';
 import '../../features/auth/presentation/pages/login_page.dart';
 import '../../features/auth/presentation/pages/register_page.dart';
 import '../../features/auth/presentation/pages/forgot_password_page.dart';
+import '../../features/contact/pages/contact_page.dart';
 import '../../features/dashboard/presentation/pages/dashboard_page.dart';
 import '../../features/profile/presentation/pages/profile_page.dart';
 import '../../features/iac_resources/presentation/pages/iac_resources_page.dart';
@@ -39,6 +40,13 @@ class AppRouter {
           path: AppRoutes.forgotPassword,
           name: 'forgot-password',
           builder: (context, state) => const ForgotPasswordPage(),
+        ),
+
+        // Contact Route
+        GoRoute(
+          path: '/contact',
+          name: 'contact',
+          builder: (context, state) => const ContactPage(),
         ),
 
         // Main Application Routes
